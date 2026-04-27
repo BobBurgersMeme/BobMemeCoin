@@ -20,7 +20,8 @@ jobs:
           cat source-parts/BobMemeCoin-source-v0.2.0.zip.part.* > BobMemeCoin-source-v0.2.0.zip
           unzip -q BobMemeCoin-source-v0.2.0.zip -d extracted
           rm -rf source-parts BobMemeCoin-source-v0.2.0.zip
-          rm -f .github/workflows/bootstrap-unpack-source.yml
+          rm -rf extracted/BobMemeCoin-source-v0.2.0/.github/workflows
+          rm -rf .github/workflows
           shopt -s dotglob
           cp -a extracted/BobMemeCoin-source-v0.2.0/. .
           rm -rf extracted
