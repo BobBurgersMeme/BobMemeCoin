@@ -1,0 +1,3 @@
+# BobMemeCoin
+
+Bootstrapping source archive.
